@@ -26,3 +26,29 @@ h1 {
   nav a.active {
     color: #039be5;
   }
+  .body{
+    width: 100%;
+  }
+  .top{
+    height: 40px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #999;
+    z-index: 99;
+  }
+  .topheight{
+    height: 40px;
+  }
+
+  .bottom{
+    height: 40px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: #999;
+    z-index: 99;
+  }
+  .bottomheight{
+    height: 40px;
+  }

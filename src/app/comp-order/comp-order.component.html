@@ -1,0 +1,13 @@
+<div class="item" *ngFor="let order of orders">
+  <div class="item_i">
+  </div>
+  <div class="item_ii">
+    <div>订单号：{{order.id}}</div>
+    <div>{{order.name}}</div>
+    <div>{{order.date}}</div>
+  </div>
+  <div class="item_iii">
+    <div>￥{{order.fee}}</div>
+    <div class="info">{{order.status}}</div>
+  </div>
+</div>

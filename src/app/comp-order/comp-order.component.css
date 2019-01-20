@@ -1,0 +1,28 @@
+.item{
+    display: flex;
+    margin: 5px 0;
+    border-bottom: 1px solid #ccc;
+    align-items: center;
+    justify-content: space-between;
+}
+.item .item_i{
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    background: #ffffff none repeat scroll 50% 50% / cover;
+    background-image: url(../../images/order.jpg);
+}
+.item .item_iii .info{
+    height: 25px;
+    line-height: 25px;
+    width: 80px;
+    border-radius: 5px;
+    border: 1px solid red;
+    color: red;
+    text-align: center;
+}
+.item .item_iv{
+    line-height: 50px;
+    font-size: 24px;
+    margin-right: 5px;
+}

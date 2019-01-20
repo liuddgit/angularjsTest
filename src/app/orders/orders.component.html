@@ -1,0 +1,15 @@
+<div class="body">
+  <input #searchOrder id="search-order" />
+  <button class="search" title="search order" (click)="search(searchOrder.value)">查询</button>
+  <mat-tab-group (selectedIndexChange)="selectedIndex=$event">
+    <mat-tab label="今日">
+      <app-comp-order [orders]="curorders"></app-comp-order>
+    </mat-tab>
+    <mat-tab label="昨日">
+      <app-comp-order [orders]="yesorders"></app-comp-order>
+    </mat-tab>
+    <mat-tab label="近三天">
+      <app-comp-order [orders]="narorders"></app-comp-order>
+    </mat-tab>
+  </mat-tab-group>  
+</div>

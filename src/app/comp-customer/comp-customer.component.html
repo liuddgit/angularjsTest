@@ -1,0 +1,16 @@
+<div class="item" *ngFor="let customer of customers">
+  <div class="item_i">
+  </div>
+  <div class="item_ii">
+    <div>{{customer.name}}</div>
+    <div>{{customer.phone}}</div>
+    <div>欠款：￥{{customer.own}}</div>
+    <div>注册：{{customer.date}}</div>
+  </div>
+  <div class="item_iii" *ngIf="showtypecn">
+    {{customer.typecn}}
+  </div>
+  <div class="item_iv">
+    &gt;
+  </div>
+</div>
