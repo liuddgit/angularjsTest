@@ -1,6 +1,6 @@
 <div class="body">
-  <input #searchOrder id="search-order" />
-  <button class="search" title="search order" (click)="search(searchOrder.value)">查询</button>
+  <input class="searchinput" #searchOrder id="search-order" placeholder="请输入订单号" />
+  <button title="search order" (click)="search(searchOrder.value)">查询</button>
   <mat-tab-group (selectedIndexChange)="selectedIndex=$event">
     <mat-tab label="今日">
       <app-comp-order [orders]="curorders"></app-comp-order>

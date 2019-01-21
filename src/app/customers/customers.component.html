@@ -1,6 +1,6 @@
 <div class="body">
-  <input #searchCustomer id="search-customer" />
-  <button class="search" title="search customer" (click)="search(searchCustomer.value)">查询</button>
+  <input class="searchinput" #searchCustomer id="search-customer" placeholder="请输入客户名称"/>
+  <button title="search customer" (click)="search(searchCustomer.value)">查询</button>
   <mat-tab-group (selectedIndexChange)="selectedIndex=$event">
     <mat-tab label="全部">
       <app-comp-customer [customers]="customers" [showtypecn]=true></app-comp-customer>

@@ -4,5 +4,6 @@ export class Order {
     name: string;
     fee: string;
     date: string;
-    status: string
+    status: string;
+    image: string
   }

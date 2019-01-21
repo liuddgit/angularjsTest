@@ -5,5 +5,6 @@ export class Customer {
     own: string;
     date: string;
     type: number;
-    typecn: string
+    typecn: string;
+    image: string
   }

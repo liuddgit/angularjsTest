@@ -36,7 +36,7 @@ export class OrderService {
     if(!term.trim()){
       return of([]);
     }
-    let url = `${this.orderUrl}/?name=${term}`;
+    let url = `${this.orderUrl}/?id=^${term}`;
     if(daynum != 3){
       url += `&daynum=${daynum}`
     }
