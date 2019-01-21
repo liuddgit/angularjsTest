@@ -17,6 +17,7 @@ import { CompOrderComponent } from './comp-order/comp-order.component';
 import { CompCustomerComponent } from './comp-customer/comp-customer.component';
 import { CustomersComponent } from './customers/customers.component';
 import { OrdersComponent } from './orders/orders.component';
+import { IndexComponent } from './index/index.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { OrdersComponent } from './orders/orders.component';
     CompOrderComponent,
     CompCustomerComponent,
     CustomersComponent,
-    OrdersComponent
+    OrdersComponent,
+    IndexComponent
   ],
   imports: [
     BrowserModule,

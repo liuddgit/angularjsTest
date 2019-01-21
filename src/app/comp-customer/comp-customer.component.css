@@ -9,10 +9,7 @@
     width: 50px;
     height: 50px;
     margin-left: 10px;
-    text-align: center;
-}
-.item .item_i img{
-    height: 100%;
+    background: #ffffff none repeat scroll 50% 50% / cover;
 }
 .item .item_iii{
     height: 25px;

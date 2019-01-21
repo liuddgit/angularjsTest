@@ -1,6 +1,5 @@
 <div class="item" *ngFor="let order of orders">
-  <div class="item_i">
-      <img [src]="order.image">
+  <div class="item_i" [style.background-image]="'url('+ order.image +')'">
   </div>
   <div class="item_ii">
     <div>订单号：{{order.id}}</div>

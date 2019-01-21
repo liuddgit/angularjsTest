@@ -68,4 +68,8 @@ export class CustomersComponent implements OnInit {
     }
   }
 
+  onChangeTab(index: number): void{
+    console.log(index);
+    this.selectedIndex=index;
+  }
 }
