@@ -40,15 +40,3 @@ h1 {
   .topheight{
     height: 40px;
   }
-
-  .bottom{
-    height: 40px;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    background-color: #999;
-    z-index: 99;
-  }
-  .bottomheight{
-    height: 40px;
-  }

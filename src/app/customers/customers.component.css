@@ -1,3 +1,9 @@
 .searchinput{
     height: 30px;
 }
+.tabs{
+    width: 100%;
+}
+.tab{
+    width: 25%;
+}

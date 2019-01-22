@@ -1,11 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MatButtonModule, MatCheckboxModule} from '@angular/material';
-import {MatTabsModule} from '@angular/material/tabs';
-import {MatDividerModule} from '@angular/material/divider';
-import {MatIconModule} from '@angular/material/icon';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule, MatCheckboxModule } from '@angular/material';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatIconModule } from '@angular/material/icon';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -18,6 +18,8 @@ import { CompCustomerComponent } from './comp-customer/comp-customer.component';
 import { CustomersComponent } from './customers/customers.component';
 import { OrdersComponent } from './orders/orders.component';
 import { IndexComponent } from './index/index.component';
+import { CompTabComponent } from './comp-tab/comp-tab.component';
+import { environment } from '../environments/environment';
 
 
 @NgModule({
@@ -27,7 +29,8 @@ import { IndexComponent } from './index/index.component';
     CompCustomerComponent,
     CustomersComponent,
     OrdersComponent,
-    IndexComponent
+    IndexComponent,
+    CompTabComponent
   ],
   imports: [
     BrowserModule,
@@ -44,11 +47,13 @@ import { IndexComponent } from './index/index.component';
     // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
     // and returns simulated server responses.
     // Remove it when a real server is ready to receive requests.
-    HttpClientInMemoryWebApiModule.forRoot(
+    environment.production?[]:HttpClientInMemoryWebApiModule.forRoot(
       InMemoryDataService, { dataEncapsulation: false }
     )
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+
+}

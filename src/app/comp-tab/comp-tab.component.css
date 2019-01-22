@@ -1,0 +1,15 @@
+.comm-tabs{
+    height: 40px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 99;
+    border-top: #999 1px solid;
+    background-color: #fff;
+}
+.comm-tabs-height{
+    height: 40px;
+}
+.mat-tab-label-active{
+    color: red;
+}

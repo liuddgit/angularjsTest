@@ -1,3 +1,21 @@
-<p>
-  index works!
-</p>
+<div>
+  <div>
+    <div>环境信息</div>
+    <div>
+      生产环境：{{environmentinfo.production}}
+      <br/>
+      当前域名：{{environmentinfo.domain}}
+    </div>
+  </div>
+  
+  <div>
+    <div>图标使用</div>
+    <div>
+      <mat-icon>search</mat-icon><mat-icon>home</mat-icon>
+      <i class="material-icons md-18">face</i>
+      
+    </div>
+  </div>
+  
+</div>
+<app-comp-tab [activeindex]=0></app-comp-tab>

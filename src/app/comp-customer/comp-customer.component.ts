@@ -1,6 +1,4 @@
 import { Component, OnInit, Input } from '@angular/core';
-import {DomSanitizer} from '@angular/platform-browser';
-import {MatIconRegistry} from '@angular/material';
 
 import { Customer } from '../service/customer';
 
@@ -14,11 +12,7 @@ export class CompCustomerComponent implements OnInit {
   @Input() customers : Customer[];
   @Input() showtypecn : boolean;
 
-  constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
-    iconRegistry.addSvgIcon(
-        'thumbs-up',
-        sanitizer.bypassSecurityTrustResourceUrl('assets/img/examples/thumbup-icon.svg'));
-  }
+  constructor() {}
 
   ngOnInit() {
   }
