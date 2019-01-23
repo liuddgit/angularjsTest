@@ -1,9 +1,6 @@
 .searchinput{
     height: 30px;
 }
-.tabs{
-    width: 100%;
-}
-.tab{
+.mat-tab-label{
     width: 25%;
 }

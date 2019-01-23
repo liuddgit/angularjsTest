@@ -1,0 +1,22 @@
+.cal-key{
+    width: 100%;
+    text-align: center;
+}
+.cal-key td{
+    width: 25%;
+    height: 50px;
+    line-height: 50px;
+    border: 1px #eee solid;
+}
+.numstr{
+    height: 20px;
+    line-height: 20px;
+    text-align: right;
+}
+.numresult{
+    height: 50px;
+    line-height: 50px;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: right;
+}

@@ -10,10 +10,17 @@ export class IndexComponent implements OnInit {
   
   environmentinfo = environment;
 
+  heroes = ['Windstorm', 'Bombasto', 'Magneta', 'Tornado'];
+  
   constructor() { }
 
   ngOnInit() {
-    console.log("environment"+JSON.stringify(this.environmentinfo));
+    // console.log("environment"+JSON.stringify(this.environmentinfo));
   }
 
+  addHero(newHero: string) {
+    if (newHero) {
+      this.heroes.push(newHero);
+    }
+  }
 }

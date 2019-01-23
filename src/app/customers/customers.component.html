@@ -1,17 +1,17 @@
 <div class="body">
   <input class="searchinput" #searchCustomer id="search-customer" placeholder="请输入客户名称"/>
   <button title="search customer" (click)="search(searchCustomer.value)">查询</button>
-  <mat-tab-group class="tabs" (selectedIndexChange)="onChangeTab($event)">
-    <mat-tab class="tab" label="全部">
+  <mat-tab-group (selectedIndexChange)="onChangeTab($event)" animationDuration="1000ms">
+    <mat-tab label="全部">
       <app-comp-customer [customers]="customers" [showtypecn]=true></app-comp-customer>
     </mat-tab>
-    <mat-tab class="tab" label="重点">
+    <mat-tab label="重点">
       <app-comp-customer [customers]="impcustomers" [showtypecn]=false></app-comp-customer>
     </mat-tab>
-    <mat-tab class="tab" label="普通">
+    <mat-tab label="普通">
       <app-comp-customer [customers]="comcustomers" [showtypecn]=false></app-comp-customer>
     </mat-tab>
-    <mat-tab class="tab" label="未知">
+    <mat-tab label="未知">
       <app-comp-customer [customers]="unknowncustomers" [showtypecn]=false></app-comp-customer>
     </mat-tab>
   </mat-tab-group>  

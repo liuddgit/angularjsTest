@@ -6,6 +6,7 @@ import { MatButtonModule, MatCheckboxModule } from '@angular/material';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatIconModule } from '@angular/material/icon';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -20,6 +21,7 @@ import { OrdersComponent } from './orders/orders.component';
 import { IndexComponent } from './index/index.component';
 import { CompTabComponent } from './comp-tab/comp-tab.component';
 import { environment } from '../environments/environment';
+import { ComCalculatorComponent } from './com-calculator/com-calculator.component';
 
 
 @NgModule({
@@ -30,7 +32,8 @@ import { environment } from '../environments/environment';
     CustomersComponent,
     OrdersComponent,
     IndexComponent,
-    CompTabComponent
+    CompTabComponent,
+    ComCalculatorComponent
   ],
   imports: [
     BrowserModule,
@@ -43,6 +46,7 @@ import { environment } from '../environments/environment';
     MatTabsModule,
     MatDividerModule,
     MatIconModule,
+    FlexLayoutModule,
     
     // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
     // and returns simulated server responses.

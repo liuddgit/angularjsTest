@@ -1,4 +1,5 @@
 <div>
+  <app-com-calculator></app-com-calculator>
   <div>
     <div>环境信息</div>
     <div>
@@ -16,6 +17,27 @@
       
     </div>
   </div>
-  
+  <div>
+    <div>模板语法</div>
+    <div>
+        <p>The sum of 1 + 1 is not {{1 + 1}}</p>
+    </div>
+  </div>
+  <div>
+    <div>用户输入</div>
+    <input #newHero
+      (keyup.enter)="addHero(newHero.value)"
+      (blur)="addHero(newHero.value); newHero.value='' ">
+
+    <button (click)="addHero(newHero.value)">Add</button>
+
+    <ul><li *ngFor="let hero of heroes">{{hero}}</li></ul>
+  </div>
+  <div>
+    <div>生命周期钩子</div>
+    <div>
+      
+    </div>
+  </div>
 </div>
 <app-comp-tab [activeindex]=0></app-comp-tab>
