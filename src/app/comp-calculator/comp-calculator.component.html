@@ -1,32 +1,38 @@
 <div>
   <div>
     <div class="numstr">
-      {{numStr}}={{curResult}}
+      {{numStr}}
+      <div>={{curResult}}</div>
     </div>
     <div class="numresult">{{curNum}}</div>
   </div>
   <table class="cal-key">
     <tr>
-      <td (click)="addNum(7)">7</td>
-      <td (click)="addNum(8)">8</td>
-      <td (click)="addNum(9)">9</td>
+      <td (click)="addNum('7')">7</td>
+      <td (click)="addNum('8')">8</td>
+      <td (click)="addNum('9')">9</td>
       <td (click)="clear()">清空</td>
-    </tr>
-    <tr>
-      <td (click)="addNum(4)">4</td>
-      <td (click)="addNum(5)">5</td>
-      <td (click)="addNum(6)">6</td>
       <td (click)="del()">退格</td>
     </tr>
     <tr>
-      <td (click)="addNum(1)">1</td>
-      <td (click)="addNum(2)">2</td>
-      <td (click)="addNum(3)">3</td>
-      <td (click)="add()" rowspan="2">+</td>
+      <td (click)="addNum('4')">4</td>
+      <td (click)="addNum('5')">5</td>
+      <td (click)="addNum('6')">6</td>
+      <td (click)="addComp('*')">*</td>
+      <td (click)="addComp('/')">/</td>
     </tr>
     <tr>
-      <td (click)="addNum(0)" colspan="2">0</td>
+      <td (click)="addNum('1')">1</td>
+      <td (click)="addNum('2')">2</td>
+      <td (click)="addNum('3')">3</td>
+      <td (click)="addComp('+')" rowspan="2">+</td>
+      <td (click)="addComp('-')">-</td>
+    </tr>
+    <tr>
+      <td (click)="addNum('0')">0</td>
+      <td (click)="addNum('00')">00</td>
       <td (click)="addNum('.')">.</td>
+      <td (click)="eq()">=</td>
     </tr>
   </table>
 </div>

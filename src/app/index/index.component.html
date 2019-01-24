@@ -1,5 +1,8 @@
 <div>
-  <app-comp-calculator></app-comp-calculator>
+  <div>加法计算器</div>
+  <app-comp-calculator-add (calResult)="add($event)"></app-comp-calculator-add>
+  <div>简易计算器</div>
+  <app-comp-calculator (calResult)="getCalResult($event);"></app-comp-calculator>
   <div>
     <div>环境信息</div>
     <div>

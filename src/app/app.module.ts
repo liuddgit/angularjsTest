@@ -21,6 +21,7 @@ import { OrdersComponent } from './orders/orders.component';
 import { IndexComponent } from './index/index.component';
 import { CompTabComponent } from './comp-tab/comp-tab.component';
 import { environment } from '../environments/environment';
+import { CompCalculatorAddComponent } from './comp-calculator-add/comp-calculator-add.component';
 import { CompCalculatorComponent } from './comp-calculator/comp-calculator.component';
 
 
@@ -33,6 +34,7 @@ import { CompCalculatorComponent } from './comp-calculator/comp-calculator.compo
     OrdersComponent,
     IndexComponent,
     CompTabComponent,
+    CompCalculatorAddComponent,
     CompCalculatorComponent
   ],
   imports: [

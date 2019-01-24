@@ -3,13 +3,13 @@
     text-align: center;
 }
 .cal-key td{
-    width: 20%;
+    width: 25%;
     height: 50px;
     line-height: 50px;
     border: 1px #eee solid;
 }
 .numstr{
-    height: 40px;
+    height: 20px;
     line-height: 20px;
     text-align: right;
 }

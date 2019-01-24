@@ -23,4 +23,14 @@ export class IndexComponent implements OnInit {
       this.heroes.push(newHero);
     }
   }
+
+  add(result){
+    console.log(result);
+  }
+
+  getCalResult(result){
+    if(result){
+      console.log(result);
+    }
+  }
 }
