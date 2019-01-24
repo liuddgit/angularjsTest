@@ -17,6 +17,8 @@ export class ComCalculatorComponent implements OnInit {
 
   ngOnInit() {
     this.initData();
+    //精度问题
+    // console.log(1208.36*100);
   }
 
   //数据初始化
@@ -106,6 +108,6 @@ export class ComCalculatorComponent implements OnInit {
       r2 = 0;
     }
     m = Math.pow(10, Math.max(r1, r2));
-    return (arg1 * m + arg2 * m) / m;
+    return (parseInt((arg1 * m).toFixed(0)) + parseInt((arg2 * m).toFixed(0))) / m;
   }
 }
