@@ -21,7 +21,7 @@ import { OrdersComponent } from './orders/orders.component';
 import { IndexComponent } from './index/index.component';
 import { CompTabComponent } from './comp-tab/comp-tab.component';
 import { environment } from '../environments/environment';
-import { ComCalculatorComponent } from './com-calculator/com-calculator.component';
+import { CompCalculatorComponent } from './comp-calculator/comp-calculator.component';
 
 
 @NgModule({
@@ -33,7 +33,7 @@ import { ComCalculatorComponent } from './com-calculator/com-calculator.componen
     OrdersComponent,
     IndexComponent,
     CompTabComponent,
-    ComCalculatorComponent
+    CompCalculatorComponent
   ],
   imports: [
     BrowserModule,

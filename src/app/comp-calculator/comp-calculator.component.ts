@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-com-calculator',
-  templateUrl: './com-calculator.component.html',
-  styleUrls: ['./com-calculator.component.css']
+  selector: 'app-comp-calculator',
+  templateUrl: './comp-calculator.component.html',
+  styleUrls: ['./comp-calculator.component.css']
 })
-export class ComCalculatorComponent implements OnInit {
+export class CompCalculatorComponent implements OnInit {
 
   curNums: string[];
   curIndex: number;
@@ -110,4 +110,5 @@ export class ComCalculatorComponent implements OnInit {
     m = Math.pow(10, Math.max(r1, r2));
     return (parseInt((arg1 * m).toFixed(0)) + parseInt((arg2 * m).toFixed(0))) / m;
   }
+
 }
