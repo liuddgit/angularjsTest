@@ -25,7 +25,9 @@ export class IndexComponent implements OnInit {
   }
 
   add(result){
-    console.log(result);
+    if(result){
+      console.log(result);
+    }
   }
 
   getCalResult(result){

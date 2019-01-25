@@ -29,14 +29,3 @@ h1 {
   .body{
     width: 100%;
   }
-  .top{
-    height: 40px;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    background-color: #999;
-    z-index: 99;
-  }
-  .topheight{
-    height: 40px;
-  }

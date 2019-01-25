@@ -12,7 +12,7 @@ export class CompCalculatorAddComponent implements OnInit {
   curIndex: number;
   curNum: string;
   @Output() calResult = new EventEmitter<number>();
-  curResult : number;
+  curResult : string;
   numStr:string;
 
   constructor(private mathService : MathService) { }
@@ -27,15 +27,20 @@ export class CompCalculatorAddComponent implements OnInit {
     this.curNum = "";
     this.curNums = [];
     this.numStr = "";
-    this.calResult.emit(0);
-    this.curResult = 0;
+    this.calResult.emit();
+    this.curResult = "";
   }
   //点击数字按键
   addNum(num){
+    console.log(this.curNum);
     let len = this.curNum.length;
     let dotindex = this.curNum.indexOf(".");
     if(len == 0 && "."==num){
       this.curNum = "0.";
+    }else if("0" == num && this.curNum == "0"){
+      this.curNum = "0";
+    }else if("0" != num && "." != num && this.curNum == "0"){
+      this.curNum = num;
     }else if(dotindex >= 0){
       if(!("." == num) && (len - dotindex) <= 2){ //只能输入两位小数
         this.curNum = this.curNum + num;
@@ -90,10 +95,10 @@ export class CompCalculatorAddComponent implements OnInit {
         result = this.mathService.accAdd(result, num);
       }
       this.calResult.emit(result);
-      this.curResult = result;
+      this.curResult = result.toString();
     }else{
-      this.calResult.emit(0);
-      this.curResult = 0;
+      this.calResult.emit();
+      this.curResult = "";
     }
   }
 

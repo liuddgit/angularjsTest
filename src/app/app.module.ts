@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule, MatCheckboxModule } from '@angular/material';
 import { MatTabsModule } from '@angular/material/tabs';
+import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatIconModule } from '@angular/material/icon';
 import { FlexLayoutModule } from '@angular/flex-layout';
@@ -23,6 +24,7 @@ import { CompTabComponent } from './comp-tab/comp-tab.component';
 import { environment } from '../environments/environment';
 import { CompCalculatorAddComponent } from './comp-calculator-add/comp-calculator-add.component';
 import { CompCalculatorComponent } from './comp-calculator/comp-calculator.component';
+import { CompTopComponent } from './comp-top/comp-top.component';
 
 
 @NgModule({
@@ -35,7 +37,8 @@ import { CompCalculatorComponent } from './comp-calculator/comp-calculator.compo
     IndexComponent,
     CompTabComponent,
     CompCalculatorAddComponent,
-    CompCalculatorComponent
+    CompCalculatorComponent,
+    CompTopComponent
   ],
   imports: [
     BrowserModule,
@@ -46,6 +49,7 @@ import { CompCalculatorComponent } from './comp-calculator/comp-calculator.compo
     MatButtonModule, 
     MatCheckboxModule,
     MatTabsModule,
+    MatToolbarModule,
     MatDividerModule,
     MatIconModule,
     FlexLayoutModule,
